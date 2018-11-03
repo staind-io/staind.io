@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="js//blotter.min.js"></script>
+    <script src="js/channelSplitMaterial.js"></script>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  </head>
+  <style>
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+
+}
+  </style>
+  <body>
+    <script>
+      var text = new Blotter.Text("staind", {
+        family : "helvetica",
+        size : 120,
+        fill : "#171717"
+      });
+      var material = new Blotter.ChannelSplitMaterial();
+
+      var blotter = new Blotter(material, { texts : text });
+
+      var scope = blotter.forText(text);
+
+      scope.appendTo(document.body);
+    </script>
+  </body>
+</html>
