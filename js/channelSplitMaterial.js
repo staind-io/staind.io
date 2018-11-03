@@ -173,7 +173,7 @@
         this.mainImage = _mainImageSrc();
         this.uniforms = {
           uOffset : { type : "1f", value : 0.06 },
-          uRotation : { type : "1f", value : 48.0 },
+          uRotation : { type : "1f", value : 80.0 },
           uApplyBlur : { type : "1f", value : 20.0 },
           uAnimateNoise : { type : "1f", value : 80.0 }
         };
